@@ -19,11 +19,56 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.flex-container{
+  display: flex;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+
+.card{
+  width: 25%;
+  height: 38vh;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.sidebar{
+  width: 100vw;
+  font-size: 3em;
+  text-align: left;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0 0 15px;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+}
+.header{
+  font-weight: 1000;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.footer{
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 0;
 }
